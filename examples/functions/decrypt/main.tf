@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     crypto = {
-      source = "hashicorp.com/tae2089/crypto"
+      source  = "tae2089/crypto"
+      version = "0.0.3"
     }
   }
-  required_version = ">= 1.8.0"
 }
-# Configure the connection details for the Inventory service
+
 provider "crypto" {
-  name = "test"
+  # Configuration options
 }
 
 output "total_price" {
