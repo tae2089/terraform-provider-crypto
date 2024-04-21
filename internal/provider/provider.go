@@ -29,6 +29,7 @@ func (p *cryptoProvider) Metadata(ctx context.Context, req provider.MetadataRequ
 }
 
 func (p *cryptoProvider) Schema(ctx context.Context, req provider.SchemaRequest, resp *provider.SchemaResponse) {
+	resp.Schema.MarkdownDescription = "`crypto` is a provider that provides cryptographic functions and data sources."
 }
 
 func (p *cryptoProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {

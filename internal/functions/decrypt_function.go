@@ -25,7 +25,7 @@ func (r *DecryptFunction) Metadata(_ context.Context, req function.MetadataReque
 func (r *DecryptFunction) Definition(_ context.Context, _ function.DefinitionRequest, resp *function.DefinitionResponse) {
 	resp.Definition = function.Definition{
 		Summary:             "Decrypt function",
-		MarkdownDescription: "Echoes given argument as result",
+		MarkdownDescription: "Decrypts the given value using the key path provided.",
 		Parameters: []function.Parameter{
 			function.StringParameter{
 				Name:                "key_path",
